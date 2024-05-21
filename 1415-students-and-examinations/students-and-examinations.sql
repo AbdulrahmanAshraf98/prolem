@@ -3,4 +3,4 @@ cross join  Subjects as su
 left join Examinations as e
 on s.student_id = e.student_id and e.subject_name=su.subject_name 
 group by s.student_id  , su.subject_name
-order by s.student_id , su.subject_name
+order by s.student_id asc , su.subject_name asc
