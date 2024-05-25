@@ -1,6 +1,6 @@
 # LeetCode-Solving
 
-[![Java](https://img.shields.io/badge/Java-17-orange.svg?style=flat-square)](https://www.oracle.com/java/)
+[![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=fff)](#)
 [![LeetSync](https://img.shields.io/badge/LeetSync-active-orange.svg?style=flat-square)](https://github.com/LeetSync/leetsync)  
 
 This repository documents my journey of solving sql  LeetCode problems. I use LeetSync to automate pushing my code to GitHub. The repository contains solutions to various LeetCode challenges implemented in Java.
