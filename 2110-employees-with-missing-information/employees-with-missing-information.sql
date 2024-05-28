@@ -1,4 +1,3 @@
-/* Write your T-SQL query statement below */
  select   employee_id from Employees 
  where employee_id not in (
     select distinct employee_id  
