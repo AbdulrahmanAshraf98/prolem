@@ -1,20 +1,17 @@
 SELECT id, 
-       ISNULL([Jan], null) AS Jan_Revenue,
-       ISNULL([Feb], null) AS Feb_Revenue,
-       ISNULL([Mar], null) AS Mar_Revenue,
-       ISNULL([Apr], null) AS Apr_Revenue,
-       ISNULL([May], null) AS May_Revenue,
-       ISNULL([Jun], null) AS Jun_Revenue,
-       ISNULL([Jul], null) AS Jul_Revenue,
-       ISNULL([Aug], null) AS Aug_Revenue,
-       ISNULL([Sep], null) AS Sep_Revenue,
-       ISNULL([Oct], null) AS Oct_Revenue,
-       ISNULL([Nov], null) AS Nov_Revenue,
-       ISNULL([Dec], null) AS Dec_Revenue
-FROM (
-  SELECT id, month, revenue
-  FROM Department
-) AS SourceTable
+    [Jan] AS Jan_Revenue,
+    [Feb] AS Feb_Revenue,
+    [Mar] AS Mar_Revenue,
+    [Apr] AS Apr_Revenue,
+    [May] AS May_Revenue,
+    [Jun] AS Jun_Revenue,
+    [Jul] AS Jul_Revenue,
+    [Aug] AS Aug_Revenue,
+    [Sep] AS Sep_Revenue,
+    [Oct] AS Oct_Revenue,
+    [Nov] AS Nov_Revenue,
+    [Dec] AS Dec_Revenue
+FROM Department 
 PIVOT (
   SUM(revenue)
   FOR month IN ([Jan], [Feb], [Mar], [Apr], [May], [Jun], [Jul], [Aug], [Sep], [Oct], [Nov], [Dec])
